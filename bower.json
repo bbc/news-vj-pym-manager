@@ -1,0 +1,18 @@
+{
+  "name": "news-vj-pym-manager",
+  "authors": [
+    "Tarqwyn <steven@tarquindandy.com>"
+  ],
+  "description": "Javascript to manage pym",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor/bower/",
+    "test",
+    "tests"
+  ]
+}
