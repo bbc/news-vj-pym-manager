@@ -47,7 +47,10 @@ define('pymManager', function () {
                     });
 
                     pymParent.onMessage('window:redirectTo', function (url) {
-                        window.location = url;
+                        var SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp):|[^&:/?#]*(?:[/?#]|$))/gi;
+                        if (url.match(SAFE_URL_PATTERN)) { 
+                            window.location = url;
+                        }
                     });
 
                     pymParent.onMessage('request', function (request) {
